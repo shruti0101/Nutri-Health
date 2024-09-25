@@ -16,6 +16,8 @@ const App = () => {
           <Route path="/" element={<Layout />}>
             <Route index element={<Home />} />
             <Route path="/about" element={<About />} />
+            <Route path="/bmi-calculator" element={<About />} />
+            <Route path="/our-team" element={<About />} />
           
           </Route>
         </Routes>

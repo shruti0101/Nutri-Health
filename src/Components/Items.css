@@ -1,0 +1,15 @@
+.checked {  
+    color : yellow;  
+    font-size : 15px;  
+}  
+.unchecked {  
+    font-size : 15px;  
+}  
+
+@media (max-width:600px) {
+.item-card{
+    text-align: center;
+   font-weight: 500;
+}
+    
+}
