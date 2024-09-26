@@ -5,10 +5,10 @@ import './Info.css';
 const Info = () => {
   return (
     <>
-        <div className='container-fluid p-0 m-0  mt-5  '  style={{background:'#F0FAF0'}}>
+        <div className='container-fluid p-0 m-0  mt-5 main-info '  style={{background:'#F0FAF0'}}>
          
                 <div className='row '>
-                    <div className='col-lg-6 '>
+                    <div className='col-lg-6  '>
                         <img src='https://healthfirst.qodeinteractive.com/wp-content/uploads/2021/03/h2-img-1-1.jpg' className='img-fluid' alt=''>
 
                         </img>
@@ -24,7 +24,7 @@ const Info = () => {
 
                        
                        <div className='learn-more'>
-                       <Link className="learn-btn" to='/about'>Learn More</Link>
+                       <Link className="learn-btn hh2" to='/about'>Learn More</Link>
                        </div>
                    
                        

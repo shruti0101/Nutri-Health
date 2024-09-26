@@ -8,7 +8,7 @@ const Items = () => {
                 <div className='container '>
 
                     {/* heading */}
-                    <div className='item-heading col-lg-5 text-center mx-auto pt-3 mt-5'>
+                    <div className='item-heading mx-auto col-lg-5 text-center pt-3 mt-5'>
                         <h1 className='fs-1 '>Popular Items</h1>
                         <p className=' text-wrap'>Lorem ipsum dolor sit amet, consetetur sadipiscing elitr sed diam nonumy eimod tempor invidunt Lorem ipsum dolor sit  .</p>
                     </div>
@@ -16,7 +16,7 @@ const Items = () => {
                     {/*cards  */}
                     <div className='row'>
 
-                        <div className='col-lg-3 col-12  mt-5 mb-5'>
+                        <div className='col-lg-3 col-md-6 col-12  mt-5 mb-5'>
 
                             <div className='popular-items'>
                                 <div className='item-card'>
@@ -37,7 +37,7 @@ const Items = () => {
 
                         {/* card -2 */}
 
-                        <div className='col-lg-3  col-12  mt-5'>
+                        <div className='col-lg-3 col-md-6  col-12  mt-5'>
 
                             <div className='popular-items'>
                                 <div className='item-card'>
@@ -57,7 +57,7 @@ const Items = () => {
 
                         {/* card-3 */}
 
-                        <div className='col-lg-3 col-12  mt-5'>
+                        <div className='col-lg-3 col-md-6 col-12  mt-5'>
 
                             <div className='popular-items'>
                                 <div className='item-card'>
@@ -80,7 +80,7 @@ const Items = () => {
                         {/* card-3 */}
 
 
-                        <div className='col-lg-3  col-12 mt-5'>
+                        <div className='col-lg-3  col-md-6 col-12 mt-5'>
 
                             <div className='popular-items'>
                                 <div className='item-card'>

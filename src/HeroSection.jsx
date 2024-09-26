@@ -4,6 +4,8 @@ import './HeroSection.css';
 const HeroSection = () => {
     return (
         <section className="hero-section pt-5 ">
+        <div className='container-fluid'>
+
             <div className="container">
                 <div className="row align-items-center ">
                     {/* Left text area */}
@@ -35,6 +37,7 @@ const HeroSection = () => {
                     </div>
                 </div>
             </div>
+        </div>
         </section>
     );
 };

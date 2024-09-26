@@ -1,3 +1,8 @@
+
+.main-info{
+    overflow-x:hidden ;
+}
+
 .text p{
 color:rgb(66, 64, 64);
 }
@@ -28,9 +33,13 @@ color:rgb(66, 64, 64);
     background-size: 10px 10px; 
     background-repeat: repeat-x;
     transform: scaleX(0); 
+   transform-origin: left;
     transition: transform 0.3s linear;
    
 
+}
+.hh2::after{
+    content: "~~~~~~~"!important;
 }
 .learn-more .learn-btn:hover::after{
     transform: scaleX(1); 

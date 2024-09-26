@@ -1,51 +1,48 @@
 import React from 'react';
-import './Slider.css'
-
-const Slider = () => {
-  return (
+import './Slider.css';  // Custom CSS for styling
+import Carousel from 'react-bootstrap/Carousel';
 
 
-    <>
+function Slider() {
+    return (
+        <>
+            <div className="carousel-container mt-3 ">
+                {/* Background image */}
+                <div className="carousel-bg-image mt-4" style={{ backgroundImage: `url(https://healthfirst.qodeinteractive.com/wp-content/uploads/2021/03/h1-img-3.jpg)` }} />
 
-<div className="container-fluid slider-container">
-        <div className="overlay"></div>
-        <div id="textCarousel" className="carousel slide" data-bs-ride="carousel">
-            <div className="carousel-inner">
-                <div className="carousel-item active">
-                    <div className="carousel-caption">
-                        <p>Omnium labitur fierent at vel.</p>
-                        <p>Contentio fugit ubique et est, eos no regione probatus.</p>
-                        <p>- Thomas Bradley</p>
-                    </div>
-                </div>
-                <div className="carousel-item">
-                    <div className="carousel-caption">
-                        <p>Another inspiring quote here.</p>
-                        <p>Something that adds value to the conversation.</p>
-                        <p>- Jane Doe</p>
-                    </div>
-                </div>
-                <div className="carousel-item">
-                    <div className="carousel-caption">
-                        <p>The third quote that can inspire.</p>
-                        <p>More engaging text can go here.</p>
-                        <p>- John Smith</p>
-                    </div>
-                </div>
+                {/* Carousel text content */}
+                <Carousel className="carousel-content" interval={3000} indicators={false} controls={false} slide>
+                    <Carousel.Item>
+                        <div className="carousel-text">
+                            <div className="quote-icon">❝</div>
+                            <h3>Omnium labitur fierent at vel.</h3>
+                            <p>Contentio fugit ubique et est, eos no regione probatus
+                                Contentio fugit ubique et est, eos no regione probatus.</p>
+                            <div className="author">George Upthorn</div>
+                        </div>
+                    </Carousel.Item>
+                    <Carousel.Item>
+                        <div className="carousel-text">
+                            <div className="quote-icon">❝</div>
+                            <h3>Lorem ipsum dolor sit amet.</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <div className="author">John Doe</div>
+                        </div>
+                    </Carousel.Item>
+                    <Carousel.Item>
+                        <div className="carousel-text">
+                            <div className="quote-icon">❝</div>
+                            <h3>Praesent commodo cursus magna.</h3>
+                            <p>Praesent commodo cursus magna, vel scelerisque nisl
+                                raesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                            <div className="author">Jane Doe</div>
+                        </div>
+                    </Carousel.Item>
+                </Carousel>
             </div>
-         
-            <button className="carousel-control-prev" type="button" data-bs-target="#textCarousel" data-bs-slide="prev">
-                <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span className="visually-hidden">Previous</span>
-            </button>
-            <button className="carousel-control-next" type="button" data-bs-target="#textCarousel" data-bs-slide="next">
-                <span className="carousel-control-next-icon" aria-hidden="true"></span>
-                <span className="visually-hidden">Next</span>
-            </button>
-        </div>
-    </div>
-    </>
-  )
+        </>
+    );
 }
 
-export default Slider
+export default Slider;

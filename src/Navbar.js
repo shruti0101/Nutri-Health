@@ -26,15 +26,15 @@ const CustomNavbar = () => {
               className="collapse navbar-collapse justify-content-between"
               id="navbarNavAltMarkup"
             >
-              <div className="navbar-nav text-center fw-bold ">
-                <Link className="nav-item nav-link active" to="/">
+              <div className="navbar-nav text-center  fw-bold ">
+                <Link className="nav-item nav-link active hh" to="/">
                   Home <span className="sr-only">(current)</span>
                 </Link>
                 <Link className="nav-item nav-link" to="/about">
-                  About
+                  About Us
                 </Link>
                 <Link className="nav-item nav-link" to="/recipe">
-                  Recipe
+                  Recipes
                 </Link>
 
                 {/* Services Dropdown */}
